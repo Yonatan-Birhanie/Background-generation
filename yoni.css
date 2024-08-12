@@ -1,0 +1,67 @@
+@font-face{ font-family:'robots';}
+@font-face{ font-family:'roboto-eb'}
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'roboto';
+    text-decoration:none;
+    box-sizing:border-box;
+    transition: .3s;
+}
+body{
+    overflow:hidden;
+}
+  header{
+    display:flex;
+    align-items:center;
+    padding:10px 20px;
+  }
+   header a.logo img{
+    width:100px;
+   }
+   header ul{
+    list-style-type: none;
+    display:flex;
+    align-items:center;
+   }
+   header ul a{
+     color:#777;
+     padding:10px 16px;
+     margin:0 18px;
+     text-transform:capitalize ;
+     position:relative;
+
+   }
+   header ul a::before{
+    opacity:1;
+
+   }
+   header ul a:hover{
+    color:#000;
+    font-weight:bolder;
+
+   }
+   header ul a.active{
+    color:#000;
+    font-weight:bolder;
+   }
+   header ul a.active::before{
+     opacity: 1;
+   }
+    body::before{
+        content:'deadpool';
+        font-family:'roboto-eb';
+        position:fixed;
+        top:30%;
+        left:20%;
+        font-size:22rem ;
+        text-transform: uppercase;
+        font-weight:bolder ;
+        color:transparent;
+        background-image: linear-gradient(#dcdcdc 10%,transparent 10%);
+        background-repeat:repeat;
+        background-size:10% 3%;
+        z-index:-1 ;
+
+    }
